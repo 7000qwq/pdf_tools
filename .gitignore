@@ -84,7 +84,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# PDF test files (optional - 可以根据需要调整)
-# *.pdf
-# test_*.pdf
-# sample_*.pdf
+# PDF files - ignore all PDF files to prevent committing large documents
+*.pdf
+test_*.pdf
+sample_*.pdf
+*_watermarked.pdf
+*_rotated_*.pdf
+*_deleted_*pages_kept_*pages.pdf
