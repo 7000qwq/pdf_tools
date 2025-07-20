@@ -211,7 +211,7 @@ class PDFWatermarkTool:
         
         # 生成输出文件路径
         base_name = os.path.splitext(self.input_pdf_path)[0]
-        self.output_pdf_path = f"{base_name}_带水印.pdf"
+        self.output_pdf_path = f"{base_name}_watermarked.pdf"
         
         # 获取可选参数
         print("\n可选参数设置（直接回车使用默认值）：")

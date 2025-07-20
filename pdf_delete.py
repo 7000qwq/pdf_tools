@@ -230,7 +230,7 @@ class PDFDeleteTool:
         base_name = os.path.splitext(self.input_pdf_path)[0]
         deleted_count = len(pages_to_delete)
         kept_count = total_pages - deleted_count
-        self.output_pdf_path = f"{base_name}_删除{deleted_count}页_保留{kept_count}页.pdf"
+        self.output_pdf_path = f"{base_name}_deleted_{deleted_count}pages_kept_{kept_count}pages.pdf"
         
         # 确认信息
         print("\n" + "=" * 60)

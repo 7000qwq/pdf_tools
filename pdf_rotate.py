@@ -197,8 +197,8 @@ class PDFRotateTool:
         
         # 生成输出文件路径
         base_name = os.path.splitext(self.input_pdf_path)[0]
-        angle_desc = f"{rotation_angle}度" if rotation_angle != 0 else "0度"
-        self.output_pdf_path = f"{base_name}_旋转{angle_desc}.pdf"
+        angle_desc = f"{rotation_angle}deg" if rotation_angle != 0 else "0deg"
+        self.output_pdf_path = f"{base_name}_rotated_{angle_desc}.pdf"
         
         # 确认信息
         print("\n" + "=" * 60)
